@@ -1,0 +1,28 @@
+/* styles.css */
+
+.modal-90w {
+  max-width: 90%;
+}
+
+/* PurchaseOrderModal.css */
+
+ .lower-left-button {
+  /* position: absolute; */
+  bottom: 10px;
+  left: 10px;
+  border: 1px solid #B4B4B4; 
+} 
+
+/* .custom-modal {
+  border: 1px solid black; 
+} */
+
+/* .custom-modal-button {
+  border: 1px solid black;
+} */
+
+/* .custom-modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+} */
