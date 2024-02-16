@@ -7,6 +7,7 @@ import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import { Container } from 'react-bootstrap';
+import SSCBreadcrumbComponent, { breadcrumbObject } from './SSC-Breadcrumb/SSCBreadcrumbComponent';
 
 function Example() {
   const [show, setShow] = useState(false);
@@ -34,6 +35,24 @@ function Example() {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
+  const breadcrumbSteps: breadcrumbObject[] = [
+    {
+      active: false,
+      steps: "Step 1",
+      designation: "Designation",
+      name: "LastName, FirstName MI.",
+
+    },
+    {
+      active: true,
+      steps: "Step 2",
+      designation: "Designation",
+      name: "LastName, FirstName MI.",
+    }
+  ];
+
+  const [currentStepIndex, setCurrentStepIndex] = useState(0); // Example of using state to manage current step index
+  
   return (
     <>
       <Button variant="primary" onClick={() => setShow(true)}>
@@ -46,7 +65,18 @@ function Example() {
         dialogClassName="modal-90w"
         aria-labelledby="example-custom-modal-styling-title"
       >
-        <Container>dsfdsfdsds</Container>
+        {/* make space between Containers using gap  */}
+        {/* pass the value of breadcrumbSteps array */}
+        <Container className="d-flex gap-2" style={{ paddingTop: '2rem' }}>
+          <SSCBreadcrumbComponent
+            currentStepIndex={currentStepIndex}
+            steps={breadcrumbSteps}
+            designation={breadcrumbSteps}
+            name={breadcrumbSteps}
+            active={true}
+          />
+        </Container>
+
         <Modal.Header closeButton style={{ backgroundColor: '#2D83B6', color: 'white' }}>
           <Modal.Title id="example-custom-modal-styling-title">
             Supplier
