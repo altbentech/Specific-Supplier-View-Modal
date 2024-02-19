@@ -50,8 +50,6 @@ function Example() {
       name: "LastName, FirstName MI.",
     }
   ];
-
-  const [currentStepIndex, setCurrentStepIndex] = useState(0); // Example of using state to manage current step index
   
   return (
     <>
