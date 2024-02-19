@@ -1,23 +1,158 @@
-.containerBreadcrumb{
-    border: solid transparent !important;
-
-}
-.breadcrumbSteps{
+@media only screen and (max-width: 768px) {
+    .notActive {
+      border: solid transparent !important;
+      display: none;
+    }
+    .colorActive {
+      color: #2d83b6 !important;
+    }
+    .colorNotActive {
+      color: #767676 !important;
+    }
+    .containerActive {
+      background-color: #53a6d8 !important;
+      color: #fff !important;
+    }
+    .containerNotActive {
+      background-color: #d9d9d9;
+      border-top-left-radius: none;
+      border-bottom-left-radius: none;
+      color: #636363;
+    }
+    .containerStart-forBorderRadius {
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+    .containerEnd-forBorderRadius {
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+    .container-forBorderRadius {
+      border-top-right-radius: none;
+      border-bottom-right-radius: none;
+    }
+    .containerActiveBorderRadius{
+      border-top-left-radius: 5px !important;
+      border-bottom-left-radius: 5px !important;
+      border-top-right-radius: 5px !important;
+      border-bottom-right-radius: 5px !important;
+    }
+  
+    .breadcrumbSteps {
+      color: black;
+      text-decoration: none;
+      font-size: 12px;
+      cursor: pointer;
+      margin-top: 0;
+      text-decoration: none;
+      font-size: 12px;
+      cursor: pointer;
+      width: 213.64px;
+      height: 17px;
+      top: 205px;
+      left: 504.06px;
+    }
+    .breadcrumbContainer {
+      display: flex;
+      flex-wrap: wrap !important;
+      gap: 1rem;
+      width: 1606px;
+      top: 175px;
+      left: 272px;
+    }
+    .breadcrumbItem p {
+      color: #767676;
+      text-decoration: none !important;
+      cursor: default;
+      width: 56.48px;
+      height: 10px;
+      top: 175px;
+      left: 968.18px;
+      /* font-family: Lexend; */
+      font-size: 8px;
+      font-weight: 300;
+      line-height: 10px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+    .breadcrumbItem h5 {
+      color: #0000004d;
+      text-decoration: none !important;
+      cursor: default;
+      width: 171.9px;
+      height: 14px;
+      top: 187px;
+      left: 504.06px;
+      /* font-family: Lexend !important; */
+      font-size: 11px !important;
+      font-weight: 400;
+      line-height: 14px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+    .breadcrumbtextHeight p {
+      margin-bottom: 0.25rem;
+    }
+    .breadcrumbtextHeight h5 {
+      margin-bottom: 0.5rem;
+    }
+  }
+  .notActive {
+    border: transparent;
+  }
+  
+  .colorActive {
+    color: #2d83b6 !important;
+  }
+  .colorNotActive {
+    color: #767676 !important;
+  }
+  .containerActive {
+    background-color: #53a6d8 !important;
+    color: #fff !important;
+  }
+  .containerNotActive {
+    background-color: #d9d9d9;
+    border-top-left-radius: none;
+    border-bottom-left-radius: none;
+    color: #636363;
+  }
+  .containerStart-forBorderRadius {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  .containerEnd-forBorderRadius {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  .container-forBorderRadius {
+    border-top-right-radius: none;
+    border-bottom-right-radius: none;
+  }
+  
+  .breadcrumbSteps {
     color: black;
     text-decoration: none;
     font-size: 12px;
     cursor: pointer;
     margin-top: 0;
-}
-.breadcrumbContainer{
+    text-decoration: none;
+    font-size: 12px;
+    cursor: pointer;
+    width: 213.64px;
+    height: 17px;
+    top: 205px;
+    left: 504.06px;
+  }
+  .breadcrumbContainer {
     display: flex;
     flex-wrap: wrap !important;
     gap: 1rem;
     width: 1606px;
     top: 175px;
-    left: 272px; 
-}
-.breadcrumbItem p{
+    left: 272px;
+  }
+  .breadcrumbItem p {
     color: #767676;
     text-decoration: none !important;
     cursor: default;
@@ -31,10 +166,8 @@
     line-height: 10px;
     letter-spacing: 0em;
     text-align: left;
-
-
-}
-.breadcrumbItem h5{
+  }
+  .breadcrumbItem h5 {
     color: #0000004d;
     text-decoration: none !important;
     cursor: default;
@@ -48,10 +181,11 @@
     line-height: 14px;
     letter-spacing: 0em;
     text-align: left;
-}
-.breadcrumbtextHeight p{
+  }
+  .breadcrumbtextHeight p {
     margin-bottom: 0.25rem;
-}
-.breadcrumbtextHeight h5{
+  }
+  .breadcrumbtextHeight h5 {
     margin-bottom: 0.5rem;
-}
+  }
+  
