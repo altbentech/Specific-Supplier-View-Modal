@@ -50,8 +50,6 @@ function Example() {
       name: "LastName, FirstName MI.",
     }
   ];
-
-  const [currentStepIndex, setCurrentStepIndex] = useState(0); // Example of using state to manage current step index
   
   return (
     <>
@@ -69,7 +67,6 @@ function Example() {
         {/* pass the value of breadcrumbSteps array */}
         <Container className="d-flex gap-2" style={{ paddingTop: '2rem' }}>
           <SSCBreadcrumbComponent
-            currentStepIndex={currentStepIndex}
             steps={breadcrumbSteps}
             designation={breadcrumbSteps}
             name={breadcrumbSteps}

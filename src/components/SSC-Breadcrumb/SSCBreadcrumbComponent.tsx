@@ -15,15 +15,13 @@ interface ArrayRendererProps {
   steps: breadcrumbObject[];
   designation: breadcrumbObject[];
   name: breadcrumbObject[];
-  currentStepIndex: number;
   active: boolean;
 }
 
 //indicates that SSCBreadcrumbComponent is a functional component (FC) that expects props of type ArrayRendererProp
 //expects to receive steps and currentStepIndex
 const SSCBreadcrumbComponent: React.FC<ArrayRendererProps> = ({
-  steps,
-  currentStepIndex, 
+  steps
 }) => {
   return (
     <>
